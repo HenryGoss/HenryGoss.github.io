@@ -31,27 +31,32 @@
       </div>
     </div>
   </nav>
-  <div class="modal" id="composeModal" tabindex="-1">
+ <div class="modal" id="composeModal" tabindex="-1">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Contact Me!</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Me!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                    <form action="https://api.web3forms.com/submit" id=form method="POST">
+                        <input type="hidden" name="access_key" value="8412b2d1-e956-4604-a803-81f85f8de135">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label fs-3">Email address</label>
+                            <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text fs-5">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
-              <p>
-              <form>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label fs-3">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text fs-5">We'll never share your email with anyone else.</div>
-                  </div>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </div>
-                </form>
-              </form>
+        </div>
+    </div>
 
   </body>
   </html>
